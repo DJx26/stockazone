@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Market App</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Market Dashboard</h1>
+        
+        <!-- Search Section -->
+        <div class="search-box">
+            <input type="text" id="stockSymbol" placeholder="e.g., AAPL, MSFT">
+            <button onclick="searchStock()">Search</button>
+        </div>
+        
+        <!-- Results -->
+        <div id="stockResults"></div>
+        
+        <!-- Chart -->
+        <canvas id="stockChart"></canvas>
+        
+        <!-- Watchlist -->
+        <div class="watchlist">
+            <h2>Your Watchlist</h2>
+            <div id="watchlistItems"></div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
