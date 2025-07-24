@@ -15,6 +15,7 @@ app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
 
+
 # Database Setup
 SQLALCHEMY_DATABASE_URL = "sqlite:///./stocks.db"
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
