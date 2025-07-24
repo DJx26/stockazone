@@ -21,6 +21,7 @@ async function searchStock() {
     loadHistoricalData(symbol);
 }
 
+
 async function loadHistoricalData(symbol) {
     const response = await fetch("/historical", {
         method: "POST",
