@@ -70,6 +70,5 @@ async function loadWatchlist() {
     
     document.getElementById("watchlistItems").innerHTML = html;
 }
-
 // Initialize
 loadWatchlist();
