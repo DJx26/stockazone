@@ -1,4 +1,2 @@
-
-
 pip freeze > requirements.txt 
 
