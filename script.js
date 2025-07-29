@@ -18,6 +18,7 @@ async function searchStock() {
     `;
     
     // Load historical data
+    
     loadHistoricalData(symbol);
 }
 
