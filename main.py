@@ -49,7 +49,7 @@ async def historical_data(symbol: str = Form(...)):
     data = requests.get(url).json()
     return data.get("Time Series (Daily)", {})
 
-# Watchlist Endpoints
+# Watchlist
 @app.post("/watchlist/add")
 async def add_to_watchlist(symbol: str = Form(...)):
     db = SessionLocal()
